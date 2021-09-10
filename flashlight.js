@@ -7,7 +7,7 @@ class FlashLightOverlay {
         this.innerRadius = innerRadius;
         this.outerRadius = outerRadius;
 
-        this.mouse = { x: (window.innerWidth / 2), y:  (window.innerHeight / 2) };
+        this.mouse = { x: (window.innerWidth / 2), y: (window.innerHeight / 2) };
         this.color = color;
 
         this.canvas.width = window.innerWidth;
