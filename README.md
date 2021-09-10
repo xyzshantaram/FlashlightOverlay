@@ -39,4 +39,4 @@ overlay.disable();
 
 Copyright © 2021 Siddharth Singh
 
-This is free, open-source software under the MIT license
+This is free, open-source software under the MIT license.
