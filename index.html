@@ -1,13 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel='stylesheet' href='style.css'>
+    <title>Radial dark mode demo</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        body>*:not(.flashlight-overlay-canvas):not(img) {
+            max-width: 80ch;
+        }
+        body>img {
+            object-fit: contain;
+            max-width: 90%;
+            max-height: 90%;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <script defer src='main.js'></script>
+    <div id='controls'>
+        <div>
+            <label for='dark-enabled'>Enable dark mode: </label><input type="checkbox" id='dark-enabled'>
+        </div>
+        <div>
+            <label for='lit-radius'>Lit-up radius: </label><input type='number' value='100' id='lit-radius'>
+        </div>
+        <div>
+            <label for='circle-radius'>Circle radius: </label><input type='number' value='200' id='circle-radius'>
+        </div>
+        <div>
+            <label for='overlay-color'>Overlay color: </label><input type='color' value='#000000' id='overlay-color'>
+        </div>
+    </div>
+    <p>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel massa vestibulum, molestie elit id,
+        luctus velit. Nullam imperdiet tellus sit amet tortor laoreet vestibulum. Cras blandit libero id nunc pulvinar,
+        eu aliquet risus ornare. Cras rutrum turpis et erat imperdiet, sed accumsan odio efficitur. Sed a ante ornare,
+        fringilla est quis, luctus ligula. Phasellus placerat, nibh tempus bibendum egestas, odio magna efficitur
+        tellus, sit amet tempus neque quam ut sem. Donec rutrum libero eget nunc laoreet aliquet. Maecenas ac dui nec
+        dui rhoncus luctus ut sit amet purus. Maecenas commodo mattis quam, eu interdum ante luctus quis. Nullam sit
+        amet lectus pharetra, ornare diam eu, ultricies ex. Maecenas eu sagittis elit. Integer semper est urna, quis
+        rutrum tortor pretium sit amet. Sed commodo efficitur sapien sit amet accumsan. Sed risus tortor, posuere sed
+        magna in, vulputate mollis enim. Nunc pharetra dignissim elit, a interdum tortor consectetur id. Pellentesque
+        interdum nulla quis lorem efficitur, eget vestibulum nunc elementum.
+    </p>
+    <img alt='a placeholder img' src='https://via.placeholder.com/512'>
+    <p>
+        Etiam ac tincidunt orci. In justo odio, pulvinar id neque et, placerat posuere tellus. Cras feugiat ornare
+        dapibus. Duis massa mauris, consequat sit amet volutpat sit amet, malesuada nec ligula. Integer mauris metus,
+        blandit a lacus ac, tempor scelerisque libero. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos. Mauris tincidunt lectus quis lacus semper consequat. Integer non aliquet lectus,
+        eu mattis tortor. Cras in mi leo. Fusce luctus, ex consectetur malesuada sagittis, mauris eros tincidunt leo,
+        eget interdum odio arcu id urna. Morbi ut molestie ligula. Quisque enim ligula, cursus vel magna at, hendrerit
+        aliquet orci. Vivamus sit amet porttitor mi. Phasellus mollis sem a varius suscipit. Donec erat ante, hendrerit
+        id laoreet ac, cursus non urna. Morbi laoreet pretium pharetra.
+    </p>
+    <p>
+        Donec gravida ante enim, et maximus purus luctus ac. Sed posuere mi nulla, eget sodales massa varius in. Sed
+        commodo, ipsum eu egestas aliquet, nisl ante imperdiet lorem, suscipit varius odio lacus vel massa. Fusce id
+        elit
+        sit amet lorem placerat lobortis. Praesent at malesuada libero. Quisque fringilla nec nulla quis egestas.
+        Maecenas
+        sit amet malesuada magna. Pellentesque nisi magna, iaculis ut massa ac, rutrum aliquam ex. Aliquam ornare, nulla
+        a
+        feugiat viverra, mauris nulla sodales sapien, sed aliquet nunc turpis maximus justo. Curabitur malesuada ex sed
+        ullamcorper blandit. Pellentesque sit amet consequat ex. Suspendisse non elementum purus, sit amet bibendum
+        lacus.
+        Suspendisse bibendum, risus et tincidunt suscipit, sapien nisi consequat quam, quis pharetra erat velit ac nisi.
+        Suspendisse potenti.
+    </p>
+    <p>
+        Praesent varius orci sed suscipit accumsan. Pellentesque sed rutrum quam. Morbi laoreet lorem at magna aliquam,
+        nec fringilla lacus porta. Nulla facilisi. Nullam suscipit ligula et vehicula sagittis. Curabitur tempus pretium
+        ligula, imperdiet mattis dolor. Cras eu mauris vitae ligula dapibus placerat id cursus arcu.
+    </p>
+    <p>
+        Pellentesque tristique dolor non risus suscipit, bibendum tincidunt turpis maximus. Integer feugiat risus ac
+        mauris mattis elementum. Integer feugiat efficitur sem, vitae ullamcorper dui. Praesent aliquam porttitor
+        sollicitudin. Fusce mattis rutrum ornare. Duis non erat consectetur, dictum metus id, consequat diam.
+        Suspendisse viverra maximus nisi, in dictum ante tincidunt nec. Etiam finibus at nibh ut euismod. Suspendisse
+        potenti. Duis vitae erat leo. Sed volutpat vel elit eu dictum. Cras sagittis tellus non lectus ullamcorper, vel
+        aliquam elit tincidunt. Donec vulputate, leo finibus rutrum interdum, nulla sem interdum ex, eu ultricies leo
+        urna id dui. Nulla facilisi. Nunc placerat consequat est vitae sollicitudin. Etiam bibendum lacus vestibulum
+        luctus faucibus.
+
+    </p>
+    <script src='rdark.js'></script>
 </body>
+
 </html>

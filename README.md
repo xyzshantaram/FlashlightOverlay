@@ -1,3 +1,3 @@
-# radial-darkmode
+# FlashlightOverlay
 
-A canvas-based dark mode demo.
+A canvas-based overlay for websites, intended to resemble a flashlight.
